@@ -5,6 +5,7 @@ import Login from "./components/pages/Login/Login"
 import Register from "./components/pages/Register/Register"
 import Error from "./components/pages/Error/Error"
 import AboutUs from "./components/pages/AboutsUs/AboutUs"
+import NavBar from "./components/layout/NavBar/NavBar"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <BrownserRouter>
+        <NavBar/>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
